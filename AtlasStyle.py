@@ -5,6 +5,8 @@
 
 from ROOT import TStyle, TLatex, gStyle, TLine, TMarker, TCanvas, gROOT, TPave
 
+lumi_string = "#sqrt{s} = 13 TeV, 36.1 fb^{-1}"
+
 def BoldLabel(x, y, color, dR, tsize,bold_text, text):
     l = TLatex()
     l.SetNDC()
@@ -93,7 +95,7 @@ def AtlasStyle():
 
 
 def SetAtlasStyle():
-    print "Applying ATLAS style settings...\n"
+    # print "Applying ATLAS style settings...\n"
     atlasStyle = AtlasStyle()
     gROOT.SetStyle("ATLAS")
     gROOT.ForceStyle()
